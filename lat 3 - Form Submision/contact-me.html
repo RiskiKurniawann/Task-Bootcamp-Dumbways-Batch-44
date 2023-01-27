@@ -3,6 +3,7 @@
         <title>contact me</title>
     </head>
     <link rel="stylesheet" href="assets/css/nav.css">
+  
     <body>
         <!-- Navbar -->
         <nav>
@@ -10,7 +11,7 @@
             <img src="assets/image/logo.png" alt="">
             <ul>
                 <li>
-                    <a href="task2.html">Home</a>
+                    <a href="task3.html">Home</a>
                 </li>
                 <li>
                     <a href="">My Project</a>
@@ -28,35 +29,41 @@
         <div style="width: 450px;margin: 0 auto; margin-top:50px;">
             <form>
                 <div>
-                    <label for="name">Nama</label>
+                    <label for="name" style="font-size: 17px; font-weight: bold;">Nama</label>
                     <input type="text" placeholder="Type your name"id="name" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #c4c4c4">
                 </div>
+
                 <div>
-                    <label for="email">Email</label>
+                    <label for="email" style="font-size: 17px; font-weight: bold;">Email</label>
                     <input type="text" placeholder="Type your email" id="email" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #c4c4c4">
                 </div>
+
                 <div>
-                    <label for="phone">Phone Number</label>
+                    <label for="phone" style="font-size: 17px; font-weight: bold;">Phone Number</label>
                     <input type="text" placeholder="Type phone number" id="phone"style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #c4c4c4">
                 </div>
+
                <div>
-                <label for="subject">Subject</label>
-                <select id="subject" aria-placeholder="Select an option" style=" width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #c4c4c4">
-                    <option value="">Frontend</option>
-                    <option value="">BackEnd</option>
-                    <option value="">Fullstack</option>
-                </select>
+                  <label for="subject" style="font-size: 17px; font-weight: bold;">Subject</label>
+                  <select id="subject" style=" width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #c4c4c4">
+                     <option >Frontend</option>
+                     <option >BackEnd</option>
+                     <option >Fullstack</option>
+                  </select>
                </div>
               
                <div>
-                <label for="yourMessage">Your message</label>
+                <label for="yourMessage" style="font-size: 17px; font-weight: bold;">Your message</label>
                 <textarea id="yourMessage" placeholder="Type your message" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #c4c4c4 ;resize: none;"></textarea>
                </div>
+               
                 <div>
-                    <button style="background-color: black; padding: 8px 30px; border: none; border-radius: 10px; font-size: 17px; color: white; cursor: pointer;margin-left: 350px;">Submit</button>
+                    <button type="button" onclick="getData()" style="background-color: black; padding: 8px 30px; border: none; border-radius: 10px; font-size: 17px; color: white; 
+                    cursor: pointer;margin-left: 350px;" >Submit</button>
                 </div>
                
             </form>
         </div>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
